@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Company Website design</title>
+    <!----CSS link----->
+    <link rel="stylesheet" href="style.css">
+    <!----Font CDN search box Link---->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="navbar_container">
+        <div class="logo_container">
+          <img src="logo.png">
+        </div>
+        <div class="navlinks" id="navlinks_container">
+          <div class="navlinks">
+           
+
+            <ul id="nav">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Services</a>
+                  <ul>
+                      <li><a href="#">Engineering</a></li>
+                      <li><a href="#">Manage Analytics</a></li>
+                      <li><a href="#">Service Types »</a>
+                          <ul>
+                              <li><a href="#">Enterprises AI</a>
+                                  <li><a href="#">Machine Data</a>
+                          </ul>
+                          </li>
+                  </ul>
+                  </li>
+                  <li><a href="#">Expertise</a></li>
+          </ul>
+      
+
+
+          </div>
+        </div>
+        <div class="button">
+          <a href="" class="search"><i class="fa fa-search"></i></a>
+        </div>
+      </div>
+      <div class="banner">
+        <div class="left">
+        <div class="left_inner_container">
+          <h2><span>ZiMetrics Technologies</span><br>About ZiMetrics</h2>
+          <p class="info">
+            ZiMetrics is a niche technology provider and solutions enabler for IoT, Machine data, Big Data analytics, and Data Science. We enable enterprises to harness the vast economic potential and transformational business value of data from systems, machines, connected devices, and human-generated content.
+          </p>
+          <div class="box">
+            <form>
+              <input type="text" placeholder="Name">
+              <input type="email" placeholder="Email">
+              <button class="button2" type="button" name="button">Login<i class="fa fa-caret-right"></i></button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="right">
+        <div class="right_inner_container">
+          <img id="intro" src="3.jpg">
+        </div>
+      </div>
+
+
+
+      
+  </body>
+  <style>
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Be vietnam', sans-serif;
+  overflow: hidden;
+}
+html{
+  font-size: 62.5%;
+}
+.container{
+  background:grey;
+  position: relative;
+}
+.navbar_container{
+  width: 100%;
+  position: absolute;
+  height: 10rem;
+  background: transparent;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0% 10% 0% 10%;
+}
+.logo_container{
+  width: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navlinks{
+  font-size: 2rem;
+  width: 100%;
+  text-align: right;
+  margin-left: 190px;
+}
+.navlinks a{
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #fff;
+  padding-right: 40px;
+  font-weight: 600;
+}
+.navlinks a.active,
+.navlinks a:hover{
+  color: #20364b;
+}
+.search{
+  background: #fdc11f;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.search i{
+  position: relative;
+  font-size: 16px;
+  background: #fdc11f;
+  padding: 10px;
+  border-radius: 50%;
+  color: #253a49;
+}
+.button{
+  margin-top: 8px;
+  background-color: #70683b;
+  padding: 7px;
+  border-radius: 50%;
+}
+.banner{
+  height: 70rem;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  background-image:"bg.jpg";
+  background-size:cover;
+  background-position: center;
+
+}
+.left, .right{
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.right{
+  justify-content: flex-start;
+  background-image: url(image/right1.png);
+  background-position: center left;
+  background-repeat: no-repeat;
+  max-width: 100%;
+}
+.left_inner_container{
+  height: 75%;
+  display: block;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 80%;
+}
+.left_inner_container h2{
+  font-size: 37pt;
+  width: 49rem;
+  line-height: 42pt;
+  color: #fff;
+}
+.left_inner_container h2 span{
+  color: #fdc11f;
+}
+.info{
+  margin-top: 20px;
+  font-size: 11pt;
+  width: 40rem;
+  line-height: 14pt;
+  word-spacing: 2px;
+  color: #fff;
+}
+.right_inner_container{
+  height: 90rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 20rem;
+}
+.box input,
+.box button{
+  display:block;
+}
+.box{
+  margin-top: 20px;
+}
+.box input{
+  width: 290px;
+  height: 40px;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  margin-bottom: 25px;
+  padding-left: 30px;
+}
+.box input::placeholder{
+  font-weight: light;
+  font-size: 11pt;
+}
+.box .button2{
+  width: 150px;
+  height: 50px;
+  border-radius: 56px;
+  outline: none;
+  border: none;
+  background: #fdc11f;
+  font-size: 18px;
+  color: #20364b;
+}
+.button2 i{
+  margin-left: 5px;
+}
+
+
+
+
+        #nav {
+            list-style: none inside;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        #nav li {
+            display: block;
+            position: relative;
+            float: left;
+            background: #253a49;
+            /* menu background color */
+        }
+
+        #nav li a {
+            display: block;
+            padding: 0;
+            text-decoration: none;
+            width: 200px;
+            /* this is the width of the menu items */
+            line-height: 35px;
+            /* this is the hieght of the menu items */
+            color: #ffffff;
+            /* list item font color */
+        }
+
+        #nav li li a {
+            font-size: 80%;
+        }
+
+        /* smaller font size for sub menu items */
+
+        #nav li:hover {
+            background:rgb(236, 59, 59);
+        }
+
+        /* highlights current hovered list item and the parent list items when hovering over sub menues */
+
+        #nav ul {
+            position: absolute;
+            padding: 0;
+            left: 0;
+            display: none;
+            /* hides sublists */
+        }
+
+        #nav li:hover ul ul {
+            display: none;
+        }
+
+        /* hides sub-sublists */
+
+        #nav li:hover ul {
+            display: block;
+        }
+
+        /* shows sublist on hover */
+
+        #nav li li:hover ul {
+            display: block;
+            /* shows sub-sublist on hover */
+            margin-left: 200px;
+            /* this should be the same width as the parent list item */
+            margin-top: -35px;
+            /* aligns top of sub menu with top of list item */
+        }
+    
+
+  </style>
+</html>
